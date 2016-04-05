@@ -8,7 +8,7 @@ module SocialMessaging
 
     def post_to_twitter
       return if post.draft? || post.tweeted
-      if ENV['update_twitter_with_post'] == 'true'
+      if ENV['HA_UPDATE_TWITTER_WITH_POST'] == 'true'
         TwitterClient.update(status)
         post.tweeted = true
         post.save
