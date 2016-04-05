@@ -14,7 +14,7 @@ channels = %w(
   startup
   leadership
   travel
-  writting
+  writing
   speaking
 )
 
