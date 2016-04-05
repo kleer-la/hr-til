@@ -8,6 +8,11 @@ channels = %w(
   facilitation
   coaching
   education
+  marketing
+  social-media
+  lean-agile
+  startup
+  leadership
 )
 
 channels.each do |channel|
