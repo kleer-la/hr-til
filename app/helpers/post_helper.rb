@@ -32,7 +32,7 @@ module PostHelper
       'Tweet',
       href: 'http://twitter.com/share',
       class: 'twitter-share-button',
-      'data-text': "Hoy Aprendí: #{title}",
+      'data-text': "#HA: Hoy Aprendí: #{title}",
       'data-via': "#{handle}",
       'data-hashtags': "#{channel}",
       'data-url': "#{url}"

@@ -1,1 +1,1 @@
-SITE_NAME = 'Hoy Aprendí'
+SITE_NAME = '#HA: Hoy Aprendí'
