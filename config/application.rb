@@ -13,8 +13,8 @@ module HrTil
     config.active_record.raise_in_transactional_callbacks = true
 
     config.action_controller.default_url_options = {
-      host: ENV.fetch('host'),
-      protocol: ENV.fetch('protocol')
+      host: ENV.fetch('HA_HOST'),
+      protocol: ENV.fetch('HA_PROTOCOL')
     }
   end
 end

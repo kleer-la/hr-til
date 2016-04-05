@@ -16,6 +16,6 @@ class SlackNotifier
   private
 
   def notify_endpoint
-    ENV['slack_post_endpoint']
+    ENV['HA_SLACK_POST_ENDPOINT']
   end
 end

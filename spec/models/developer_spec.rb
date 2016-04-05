@@ -20,7 +20,7 @@ describe Developer do
   context 'validates email domains' do
     before do
       stub_const('ENV', {
-        'permitted_domains' => 'hashrocket.com|hshrckt.com'
+        'HA_PERMITTED_DOMAINS' => 'hashrocket.com|hshrckt.com'
       })
     end
 

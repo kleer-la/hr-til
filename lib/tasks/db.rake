@@ -7,8 +7,8 @@ namespace :db do
   end
 
   file dump_file do
-    verify_exec "heroku pg:backups capture --app #{ENV['heroku_production_app_name']}"
-    verify_exec "curl -o #{dump_file} `heroku pg:backups public-url -a #{ENV['heroku_production_app_name']}`"
+    verify_exec "heroku pg:backups capture --app #{ENV['HA_HEROKU_PRODUCTION_APP_NAME']}"
+    verify_exec "curl -o #{dump_file} `heroku pg:backups public-url -a #{ENV['HA_HEROKU_PRODUCTION_APP_NAME']}`"
   end
 
   desc 'Download and restore prod db; requires heroku toolbelt and production db access'
