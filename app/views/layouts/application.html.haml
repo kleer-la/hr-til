@@ -6,17 +6,18 @@
     = javascript_include_tag 'application'
     = csrf_meta_tags
     %meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1")
-    %link(href='//fonts.googleapis.com/css?family=Raleway:700,900' rel='stylesheet' type='text/css')
+    %link(href='//fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css')
+    %link(href='//fonts.googleapis.com/css?family=Chewy' rel='stylesheet' type='text/css')
     %link(href='//fonts.googleapis.com/css?family=Lora:400,700italic,700,400italic' rel='stylesheet' type='text/css')
 
     = favicon_link_tag 'favicon.png'
     = yield :head
     %meta(name="twitter:card" content="summary_large_image")
-    %meta(name="twitter:site" content="@hashrockettil")
-    %meta(name="twitter:creator" content="@hashrockettil")
-    %meta(name="twitter:title" content="Today I Learned: a Hashrocket Project")
-    %meta(name="twitter:description" content="TIL is a project by Hashrocket to catalogue the sharing & accumulation of knowledge as it happens day-to-day. Posts have a 200-word limit and any Hashrocket team member can contribute. We hope you enjoy learning along with us.")
-    %meta(name="twitter:image" content="//til.hashrocket.com/assets/til_twittercard.png")
+    %meta(name="twitter:site" content="@kleer_la")
+    %meta(name="twitter:creator" content="@kleer_la")
+    %meta(name="twitter:title" content="Hoy Aprendí en Kleer")
+    %meta(name="twitter:description" content="HA es una iniciativa de Kleer que visibiliza y comparte el conocimiento que adquirimos día a día y nuestras experiencias de aprendizaje. Los mensajes tienen un límite de 200 palabras y cualquier Kleerer puede contribuir. Esperamos que disfrute aprendiendo junto con nosotros.")
+    %meta(name="twitter:image" content="//til.hashrocket.com/assets/ha_twittercard.png")
   %body
     - if developer_signed_in?
       %nav.admin_panel

@@ -18,13 +18,13 @@
           = link_to "##{post.channel_name}", post.channel, class: "post__tag-link"
         %li
           = link_to [post, format: 'md'], class: "post__raw-link", target: "_blank" do
-            view raw
+            texto plano
         %li
           = link_to post, class: 'post__permalink' do
             permalink
         - if editable?(post)
           %li
-            = link_to "edit", [:edit, post], class: "post__edit-link"
+            = link_to "editar", [:edit, post], class: "post__edit-link"
         - unless post.draft?
           %li
             = link_to post_path(post), class: "js-like-action post__like-link", id: post.slug do
