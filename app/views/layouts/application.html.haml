@@ -30,7 +30,7 @@
     %header.site_head
       %div
         %h1= link_to SITE_NAME, root_path
-        %h2= link_to "A Hashrocket project", "https://hashrocket.com"
+        -#%h2= link_to "A Hashrocket project", "https://hashrocket.com"
 
     = render 'shared/flash'
 
@@ -43,10 +43,12 @@
           .site_nav__toggle
             .copy
               :markdown
-                TIL is an open-source project by the team at [Hashrocket](https://hashrocket.com) that catalogues the sharing & accumulation of knowledge as it happens day-to-day. Posts have a 200-word limit and any Hashrocket team member can contribute. We hope you enjoy learning along with us.
+                HA es una iniciativa de Kleer que visibiliza y comparte el conocimiento que adquirimos día a día y nuestras experiencias de aprendizaje. Los mensajes tienen un límite de 200 palabras y cualquier Kleerer puede contribuir. Esperamos que disfrute aprendiendo junto con nosotros.
+
+                HA está basado en [TIL](https://til.hashrocket.com/), un proyecto open-source del equipo de [Hashrocket](https://hashrocket.com)
               %ul.social
-                %li= link_to "/hashrockettil", "https://twitter.com/hashrockettil", class: "social_twitter"
-                %li= link_to "/hashrocket/hr-til", "https://github.com/hashrocket/hr-til", class: "social_github"
+                %li= link_to "/kleer_la", "https://twitter.com/kleer_la", class: "social_twitter"
+                %li= link_to "/kleer_la/kl-ha", "https://github.com/kleer_la/kl-ha", class: "social_github"
 
         %li.site_nav__statistics
           = link_to "statistics", statistics_path, class: "site_nav__link"
@@ -57,4 +59,3 @@
             = form_tag root_path, method: 'get' do
               = search_field_tag :q
               = button_tag 'Search', name: nil
-
