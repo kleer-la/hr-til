@@ -16,6 +16,10 @@ development: &default
 test:
   <<: *default
 
+staging:
+  <<: *default
+  host: 'ha-staging.kleer.la'
+
 production:
   <<: *default
   host: 'ha.kleer.la'
