@@ -13,6 +13,9 @@ channels = %w(
   lean-agile
   startup
   leadership
+  travel
+  writting
+  speaking
 )
 
 channels.each do |channel|
