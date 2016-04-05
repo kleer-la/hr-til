@@ -4,7 +4,7 @@
 5.times do |i|
   puts "Creating developer ##{i + 1}"
   username = Phil.name.downcase.delete(' ')
-  Developer.create!(username: username, email: "#{username}@hashrocket.com")
+  Developer.create!(username: username, email: "#{username}@kleer.la")
 end
 
 40.times do |i|

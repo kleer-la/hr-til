@@ -1,22 +1,13 @@
 channels = %w(
-  clojure
-  command-line
-  design
-  devops
-  elixir
-  emberjs
-  git
-  go
-  html-css
-  javascript
-  mobile
-  rails
-  react
-  ruby
-  sql
-  testing
-  vim
-  workflow
+  culture
+  business
+  workspace
+  enterprise
+  teams
+  software-craftmanship
+  facilitation
+  coaching
+  education
 )
 
 channels.each do |channel|
